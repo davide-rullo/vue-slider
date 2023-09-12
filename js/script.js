@@ -32,6 +32,7 @@ createApp({
         
     },
     methods: {
+        
         next() {
             this.activeImage++
             if (this.activeImage > this.slides.length - 1) {
@@ -44,6 +45,11 @@ createApp({
             if (this.activeImage < 0) {
                 this.activeImage = this.slides.length - 1
             }
+        },
+
+        enlarge(index){
+            console.log("slide " + index);
+            this.activeImage = index;
         }
 }
    

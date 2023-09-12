@@ -33,7 +33,7 @@
                        
                         <template v-for="(slide, index) in slides">
                            
-                            <div class="thumb" v-bind:class="index === activeImage ? 'active' : ''">
+                            <div class="thumb" v-bind:class="index === activeImage ? 'active' : ''" @click="enlarge(index)">
 
                                 <img :src="slides[index].image"/>
                                 
