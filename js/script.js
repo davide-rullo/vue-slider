@@ -51,7 +51,10 @@ createApp({
             console.log("slide " + index);
             this.activeImage = index;
         }
-}
+},
+mounted() {
+    setInterval(this.next, 3000);
+  },
    
 
 }).mount('#app')
